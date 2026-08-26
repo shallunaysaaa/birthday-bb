@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b1018"
+    >
+
+    <title>Something For You ♡</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         INTRO / GIFT
+    ================================== -->
+
+    <main id="intro" class="screen active">
+
+        <div class="background-glow"></div>
+
+        <div class="intro-content">
+
+            <p class="tiny-label">
+                AUGUST 27, 2026
+            </p>
+
+            <h1>
+                I have<br>
+                something for you.
+            </h1>
+
+            <p class="intro-text">
+                it's not much,<br>
+                but I made it with love, bb.
+            </p>
+
+
+            <!-- GIFT BOX -->
+
+            <div
+                class="gift-area"
+                onclick="openGift()"
+            >
+
+                <div class="gift-box">
+
+                    <div class="gift-lid">
+
+                        <div class="ribbon-horizontal"></div>
+
+                    </div>
+
+                    <div class="gift-body">
+
+                        <div class="ribbon-vertical"></div>
+
+                    </div>
+
+                    <div class="gift-ribbon"></div>
+
+                </div>
+
+
+                <div class="gift-glow"></div>
+
+            </div>
+
+
+            <p class="tap-text">
+                tap the gift ♡
+            </p>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =================================
+         BIRTHDAY
+    ================================== -->
+
+    <section
+        id="birthday"
+        class="screen"
+    >
+
+        <div class="birthday-content">
+
+            <p class="tiny-label">
+                27 · 08 · 2026
+            </p>
+
+
+            <div class="cake-scene">
+
+                <div class="cake-glow"></div>
+
+                <div
+                    class="cake"
+                    onclick="makeWish()"
+                >
+
+                    <div class="cake-top">
+
+                        <div class="candle candle-1">
+                            <span class="flame"></span>
+                        </div>
+
+                        <div class="candle candle-2">
+                            <span class="flame"></span>
+                        </div>
+
+                        <div class="candle candle-3">
+                            <span class="flame"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="cake-layer top-layer"></div>
+
+                    <div class="cake-layer bottom-layer"></div>
+
+                </div>
+
+            </div>
+
+
+            <h2>
+                Happy 18th,<br>
+                <span>sayanggg.</span>
+            </h2>
+
+
+            <p class="birthday-text">
+                satu tahun lagi bertambah,<br>
+                satu chapter baru dimulai.
+            </p>
+
+
+            <p
+                id="wish-hint"
+                class="wish-hint"
+            >
+                make a wish ♡
+            </p>
+
+
+            <button
+                id="birthday-button"
+                class="soft-button hidden"
+                onclick="showCurrentPhoto()"
+            >
+                lanjut →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         CURRENT PHOTO
+    ================================== -->
+
+    <section
+        id="current-photo"
+        class="screen photo-screen"
+    >
+
+        <div class="photo-content">
+
+            <p class="tiny-label">
+                NOW
+            </p>
+
+
+            <div class="photo-wrapper">
+
+                <div class="photo-decoration"></div>
+
+                <img
+                    src="images/foto-sekarang.jpg"
+                    alt="Foto kamu"
+                    class="main-photo"
+                >
+
+            </div>
+
+
+            <div class="photo-text">
+
+                <p class="small-quote">
+                    look at you now...
+                </p>
+
+                <h2>
+                    udah sejauh ini yaa, bb.
+                </h2>
+
+                <p>
+                    aku mungkin nggak selalu bilang,
+                    tapi aku bangga sama kamu
+                    dan semua proses yang kamu jalanin
+                    sampai sekarang. 🤍
+                </p>
+
+            </div>
+
+
+            <button
+                class="text-button"
+                onclick="showChildhoodPhoto()"
+            >
+                tunggu... ada satu lagi ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         CHILDHOOD PHOTO
+    ================================== -->
+
+    <section
+        id="childhood-photo"
+        class="screen photo-screen childhood-screen"
+    >
+
+        <div class="photo-content">
+
+            <p class="tiny-label">
+                A LITTLE THROWBACK
+            </p>
+
+
+            <div class="photo-wrapper childhood-wrapper">
+
+                <div class="photo-decoration"></div>
+
+                <img
+                    src="images/foto-kecil.jpg"
+                    alt="Foto masa kecil"
+                    class="main-photo childhood-photo"
+                >
+
+            </div>
+
+
+            <div class="photo-text">
+
+                <p class="small-quote">
+                    hehe... lihat siapa ini 😭
+                </p>
+
+                <h2>
+                    dulu kecil banget yaa.
+                </h2>
+
+                <p>
+                    nggak kerasa sekarang
+                    little boy ini udah 18 tahun.
+                    🤍
+                </p>
+
+                <p class="extra-line">
+                    and i'm really happy
+                    that i get to know you today.
+                </p>
+
+            </div>
+
+
+            <button
+                class="text-button"
+                onclick="showLoveNotes()"
+            >
+                ada sedikit yang mau aku bilang ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         LOVE NOTES
+    ================================== -->
+
+    <section
+        id="love-notes"
+        class="screen notes-screen"
+    >
+
+        <div class="notes-content">
+
+            <p class="tiny-label">
+                JUST A LITTLE NOTE
+            </p>
+
+
+            <h2>
+                btw, ada beberapa<br>
+                hal yang mau aku bilang...
+            </h2>
+
+
+            <!-- NOTE 1 -->
+
+            <div
+                class="love-note active-note"
+                id="note-1"
+            >
+
+                <span>♡</span>
+
+                <p>
+                    thank you yaa sayang,
+                    for every little thing
+                    you've done.
+                </p>
+
+                <small>
+                    tap to continue
+                </small>
+
+            </div>
+
+
+            <!-- NOTE 2 -->
+
+            <div
+                class="love-note"
+                id="note-2"
+            >
+
+                <span>♡</span>
+
+                <p>
+                    mungkin beberapa hal
+                    keliatannya kecil,
+                    but trust me,
+                    i notice them.
+                </p>
+
+                <small>
+                    tap to continue
+                </small>
+
+            </div>
+
+
+            <!-- NOTE 3 -->
+
+            <div
+                class="love-note"
+                id="note-3"
+            >
+
+                <span>♡</span>
+
+                <p>
+                    aku harap kedepannya
+                    kita bisa sama-sama grow,
+                    belajar jadi versi diri kita
+                    yang lebih baik,
+                    and still choose to
+                    understand each other.
+                </p>
+
+                <small>
+                    tap to continue
+                </small>
+
+            </div>
+
+
+            <!-- NOTE 4 -->
+
+            <div
+                class="love-note"
+                id="note-4"
+            >
+
+                <span>♡</span>
+
+                <p>
+                    and bb... please take care
+                    of yourself too.
+                    jangan lupa istirahat,
+                    makan yang bener,
+                    olahraga,
+                    dan jangan tinggalin sholatnya.
+                    selalu inget Allah yaa. 🤍
+                </p>
+
+                <small>
+                    tap to continue
+                </small>
+
+            </div>
+
+
+            <!-- NOTE 5 -->
+
+            <div
+                class="love-note"
+                id="note-5"
+            >
+
+                <span>♡</span>
+
+                <p>
+                    you deserve good things,
+                    sayang.
+                    so please believe that. 🫵🏻🤍
+                </p>
+
+                <small>
+                    tap to continue
+                </small>
+
+            </div>
+
+
+            <button
+                id="notes-button"
+                class="soft-button hidden"
+                onclick="showFinalSurprise()"
+            >
+                one last thing... →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         FINAL SURPRISE
+    ================================== -->
+
+    <section
+        id="final-surprise"
+        class="screen final-screen"
+    >
+
+        <div class="final-content">
+
+            <div
+                class="envelope"
+                onclick="openLetter()"
+            >
+
+                <div class="envelope-back"></div>
+
+                <div class="envelope-letter">
+
+                    <span>
+                        one more thing,
+                    </span>
+
+                    <strong>
+                        for you ♡
+                    </strong>
+
+                </div>
+
+                <div class="envelope-front"></div>
+
+            </div>
+
+
+            <p
+                id="envelope-hint"
+                class="tap-text"
+            >
+                open this ♡
+            </p>
+
+
+            <div
+                id="final-message"
+                class="final-message hidden"
+            >
+
+                <p class="tiny-label">
+                    FROM ME, TO YOU
+                </p>
+
+                <p>
+                    i may not be able to give you
+                    everything, but i hope this little
+                    thing reminds you that there's
+                    someone who genuinely cares
+                    about you.
+                </p>
+
+                <h3>
+                    happy birthday, bb. 🤍
+                </h3>
+
+                <p>
+                    semoga tahun ini jadi salah satu
+                    chapter terbaik dalam hidup kamu.
+                </p>
+
+                <div class="final-line">
+                    i'm really glad it's you.
+                </div>
+
+                <span class="signature">
+                    — with love, always ♡
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+  </html>
